@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/207585c7cf.js" crossorigin="anonymous"></script>
+    
+    <title>Read more</title>
+</head>
+<body>
+<div class="row ">
+    <div class="col-md-2 col-sm-2 mt-4 car m-0 p-0">
+        <div class="card p-2 m-0 border-0">
+                <img class="card-image-top img-fluid rounded-circle" style="width: 100%;" src="/image/<%=books.img%>" alt="">   
+        </div>
+    </div>
+     <div class="col-md-10 col-sm-10 mt-4 m-0 p-0">
+        <div class="card border-0">
+            <div class="card-body">   
+                <h3 class="card-title sp"><%=books.bname%></h3>
+                <a href="#" class="btn btn-secondary sp">author:<%=books.author%></a><br>
+                book price:<%= books.price%>
+                   
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+
+
+    
+</body>
+</html>

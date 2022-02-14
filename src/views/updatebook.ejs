@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookregister</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/207585c7cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top py-4 n">            
+        <ul class="navbar-nav ">
+            <%for(i=0;i<nav.length;i++){%>
+                <li class="nav-item "> 
+                    <a class="nav-link" href="<%= nav[i].link %>"> <%= nav[i].name%></a>
+                </li>
+            <%}%>
+        </ul>
+    </nav>
+<div class="m ">
+<div class=" tab">
+    <form action="/admin/updatebook" method="post" enctype="multipart/form-data"> 
+    <table class="table">
+        <tr>
+            <td>
+                Book name
+            </td>
+            <td>
+                <input type="text" value="<%=books.name%>" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Author name
+            </td>
+            <td>
+                <input type="text" value="<%=books.author%>" name="author">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                publication name
+            </td>
+            <td>
+                <input type="text" value="<%=books.publication%>" name="publication">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                price
+            </td>
+            <td>
+                <input type="text" value="<%=books.price%>" name="price">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                image
+            </td>
+            <td>
+                <input type="file" value="<%=books.image%>" name="image">
+            </td>
+            <td>
+                <input type="text" hidden value="<%=books.id%>" name="id">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary">
+            </td>
+            
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+    
+</body>
+</html>

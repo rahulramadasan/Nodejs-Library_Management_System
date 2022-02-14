@@ -1,0 +1,50 @@
+/* body */
+.body{
+    background-color: rgb(173, 171, 171);
+}
+/* nav bar */
+.n{
+    background-color: #5043c5;
+}
+.n a{
+    color: white;
+}
+.n a:hover {
+    color: rgb(255, 0, 0);
+  }
+/* second section */
+.b1{
+    margin-top: -250px;
+
+}
+.car {
+    border:none;
+    
+
+}
+.dis{
+    display: flex;
+}
+.last-row a{
+    float: right;
+}
+
+  /* library */
+  .lib{
+      background-color: #0d045f;
+  }
+  .sp{
+      word-spacing: normal;
+  }
+
+
+  /* add book */
+  .m{
+    background-color: rgb(207, 198, 255);
+  }
+  .tab{
+      align-items: center;
+      margin-left: 10%;
+     
+      
+  }
